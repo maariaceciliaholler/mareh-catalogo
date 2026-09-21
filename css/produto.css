@@ -1,0 +1,249 @@
+.product-detail {
+
+    width:
+        min(
+            1180px,
+            calc(100% - 64px)
+        );
+
+    margin:
+        70px auto;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.1fr 0.9fr;
+
+    gap:
+        80px;
+
+    align-items:
+        start;
+
+}
+
+
+.product-gallery {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            1fr
+        );
+
+    gap:
+        12px;
+
+}
+
+
+.product-gallery img {
+
+    width:
+        100%;
+
+    aspect-ratio:
+        0.82;
+
+    object-fit:
+        cover;
+
+    border-radius:
+        var(--radius);
+
+}
+
+
+.product-detail-info {
+
+    position:
+        sticky;
+
+    top:
+        120px;
+
+}
+
+
+.detail-category {
+
+    color:
+        var(--rosa);
+
+    font-size:
+        11px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        2px;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.detail-name {
+
+    margin:
+        14px 0;
+
+    font-size:
+        clamp(
+            36px,
+            5vw,
+            58px
+        );
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -2px;
+
+}
+
+
+.detail-code {
+
+    color:
+        var(--gray);
+
+    font-size:
+        12px;
+
+}
+
+
+.detail-price {
+
+    margin:
+        30px 0;
+
+    font-size:
+        30px;
+
+    font-weight:
+        800;
+
+}
+
+
+.detail-description {
+
+    color:
+        var(--gray-dark);
+
+    font-size:
+        15px;
+
+    line-height:
+        1.8;
+
+}
+
+
+.detail-actions {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        10px;
+
+    margin-top:
+        35px;
+
+}
+
+
+.detail-button {
+
+    width:
+        100%;
+
+    min-height:
+        52px;
+
+    padding:
+        0 20px;
+
+    border-radius:
+        30px;
+
+    font-weight:
+        700;
+
+}
+
+
+.detail-button.primary {
+
+    background:
+        var(--rosa);
+
+    color:
+        var(--white);
+
+}
+
+
+.detail-button.secondary {
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--white);
+
+    color:
+        var(--black);
+
+}
+
+
+@media (max-width: 800px) {
+
+    .product-detail {
+
+        width:
+            calc(100% - 32px);
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            40px;
+
+    }
+
+
+    .product-detail-info {
+
+        position:
+            static;
+
+    }
+
+
+    .product-gallery {
+
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+
+    }
+
+}

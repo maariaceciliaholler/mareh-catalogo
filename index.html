@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Mareh Brechó & Outlet — peças selecionadas para uma nova história."
+    >
+
+    <title>
+        Mareh | Brechó & Outlet
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/catalogo.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="header-content">
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <span class="brand-name">
+                MAREH
+            </span>
+
+            <span class="brand-subtitle">
+                BRECHÓ & OUTLET
+            </span>
+
+        </a>
+
+
+        <nav class="main-navigation">
+
+            <a href="#catalogo">
+                Catálogo
+            </a>
+
+            <a href="#sobre">
+                Sobre
+            </a>
+
+        </nav>
+
+
+        <button
+            class="mobile-menu-button"
+            aria-label="Abrir menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="section-eyebrow">
+                MAREH BRECHÓ & OUTLET
+            </span>
+
+
+            <h1>
+                Peças que merecem
+                <span>uma nova história.</span>
+            </h1>
+
+
+            <p>
+                Uma seleção especial de roupas,
+                acessórios e peças únicas esperando
+                por um novo destino.
+            </p>
+
+
+            <a
+                href="#catalogo"
+                class="primary-button"
+            >
+                Explorar catálogo
+            </a>
+
+        </div>
+
+
+        <div class="hero-decoration">
+
+            <div class="hero-circle hero-circle-one"></div>
+
+            <div class="hero-circle hero-circle-two"></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CATEGORIAS -->
+
+    <section
+        class="categories-section"
+        id="catalogo"
+    >
+
+        <div class="section-header">
+
+            <div>
+
+                <span class="section-eyebrow">
+                    EXPLORE
+                </span>
+
+                <h2>
+                    Encontre o que combina com você.
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="category-list"
+            id="category-list"
+        >
+
+            <button
+                class="category-button active"
+                data-category="todos"
+            >
+                Todos
+            </button>
+
+            <button
+                class="category-button"
+                data-category="roupas"
+            >
+                Roupas
+            </button>
+
+            <button
+                class="category-button"
+                data-category="acessorios"
+            >
+                Acessórios
+            </button>
+
+            <button
+                class="category-button"
+                data-category="bolsas"
+            >
+                Bolsas
+            </button>
+
+            <button
+                class="category-button"
+                data-category="calcados"
+            >
+                Calçados
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CATÁLOGO -->
+
+    <section class="catalog-section">
+
+        <div class="catalog-toolbar">
+
+            <div>
+
+                <span
+                    class="products-count"
+                    id="products-count"
+                >
+                    8 peças
+                </span>
+
+            </div>
+
+
+            <div class="search-wrapper">
+
+                <span class="search-icon">
+                    ⌕
+                </span>
+
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Buscar uma peça..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="products-grid"
+            id="products-grid"
+        >
+
+            <!-- Produtos inseridos pelo JavaScript -->
+
+        </div>
+
+
+        <div
+            class="empty-state hidden"
+            id="empty-state"
+        >
+
+            <div class="empty-icon">
+                ♡
+            </div>
+
+            <h3>
+                Nenhuma peça encontrada
+            </h3>
+
+            <p>
+                Tente buscar por outro nome
+                ou categoria.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SOBRE -->
+
+    <section
+        class="about-section"
+        id="sobre"
+    >
+
+        <div class="about-content">
+
+            <span class="section-eyebrow">
+                SOBRE A MAREH
+            </span>
+
+            <h2>
+                Uma nova história
+                para cada peça.
+            </h2>
+
+            <p>
+                A Mareh acredita que uma peça pode
+                continuar contando histórias.
+                Por isso, selecionamos roupas,
+                acessórios e itens especiais para
+                encontrar novos donos.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div>
+
+            <span class="brand-name">
+                MAREH
+            </span>
+
+            <p>
+                Brechó & Outlet
+            </p>
+
+        </div>
+
+
+        <span>
+            © 2026 Mareh
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/catalogo.js"></script>
+
+</body>
+
+</html>

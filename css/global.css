@@ -1,0 +1,403 @@
+:root {
+
+    --rosa: #e84d96;
+
+    --rosa-dark: #c73579;
+
+    --rosa-light: #fff0f7;
+
+    --rosa-soft: #fce1ed;
+
+    --black: #1d1b1c;
+
+    --gray-dark: #595457;
+
+    --gray: #8b8588;
+
+    --gray-light: #dcd6d9;
+
+    --background: #fffafb;
+
+    --white: #ffffff;
+
+    --border: #eee5e9;
+
+    --shadow:
+        0 16px 40px rgba(
+            34,
+            18,
+            27,
+            0.07
+        );
+
+    --radius: 18px;
+
+    --transition:
+        0.25s ease;
+
+}
+
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    background:
+        var(--background);
+
+    color:
+        var(--black);
+
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    -webkit-font-smoothing:
+        antialiased;
+
+}
+
+
+button,
+input {
+
+    font: inherit;
+
+}
+
+
+button {
+
+    border: 0;
+
+    cursor: pointer;
+
+}
+
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+
+img {
+
+    display: block;
+
+    max-width: 100%;
+
+}
+
+
+.hidden {
+
+    display: none !important;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+
+.site-header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    background:
+        rgba(
+            255,
+            250,
+            251,
+            0.92
+        );
+
+    backdrop-filter:
+        blur(14px);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.header-content {
+
+    width:
+        min(
+            1280px,
+            calc(100% - 64px)
+        );
+
+    height: 82px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.brand {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1px;
+
+}
+
+
+.brand-name {
+
+    color:
+        var(--rosa);
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+}
+
+
+.brand-subtitle {
+
+    color:
+        var(--gray);
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+}
+
+
+.main-navigation {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 36px;
+
+}
+
+
+.main-navigation a {
+
+    color:
+        var(--gray-dark);
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition:
+        color var(--transition);
+
+}
+
+
+.main-navigation a:hover {
+
+    color:
+        var(--rosa);
+
+}
+
+
+.mobile-menu-button {
+
+    display: none;
+
+    background:
+        transparent;
+
+    font-size: 24px;
+
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+
+.primary-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding:
+        0 28px;
+
+    border-radius:
+        30px;
+
+    background:
+        var(--rosa);
+
+    color:
+        var(--white);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition:
+        all var(--transition);
+
+}
+
+
+.primary-button:hover {
+
+    background:
+        var(--rosa-dark);
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 10px 24px
+        rgba(
+            232,
+            77,
+            150,
+            0.25
+        );
+
+}
+
+
+/* =========================
+   TEXTOS
+========================= */
+
+
+.section-eyebrow {
+
+    display: block;
+
+    color:
+        var(--rosa);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+.site-footer {
+
+    margin-top:
+        100px;
+
+    padding:
+        40px 0;
+
+    background:
+        var(--black);
+
+    color:
+        var(--white);
+
+}
+
+
+.footer-content {
+
+    width:
+        min(
+            1280px,
+            calc(100% - 64px)
+        );
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.footer-content .brand-name {
+
+    color:
+        var(--white);
+
+}
+
+
+.footer-content p {
+
+    margin:
+        4px 0 0;
+
+    color:
+        #aaa;
+
+    font-size: 12px;
+
+}
+
+
+.footer-content > span {
+
+    color:
+        #aaa;
+
+    font-size: 12px;
+
+}
