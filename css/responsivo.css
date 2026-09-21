@@ -1,11 +1,96 @@
 @media (max-width: 1100px) {
-    .produtos-grid {
+
+    .products-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+
+    .hero-decoration {
+        right: -80px;
+        opacity: 0.7;
+    }
+
 }
 
+
+@media (max-width: 850px) {
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero-decoration {
+        right: -150px;
+        opacity: 0.35;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
 @media (max-width: 760px) {
-    .produtos-grid {
+
+    .header-content {
+        width: calc(100% - 32px);
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 80px 16px;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 12vw, 62px);
+        letter-spacing: -2px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-decoration {
+        display: none;
+    }
+
+    .categories-section,
+    .catalog-section {
+        width: calc(100% - 32px);
+    }
+
+    .section-header h2 {
+        font-size: 34px;
+    }
+
+    .category-list {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 8px;
+    }
+
+    .category-button {
+        flex: 0 0 auto;
+    }
+
+    .catalog-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .search-wrapper {
+        width: 100%;
+    }
+
+    .products-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 16px;
     }
@@ -18,13 +103,35 @@
         font-size: 16px;
     }
 
-    .produto-card__preco {
-        font-size: 16px;
+    .produto-card__descricao {
+        min-height: auto;
+        font-size: 12px;
     }
+
+    .produto-card__preco {
+        font-size: 15px;
+    }
+
+    .produto-card__botao {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    .footer-content {
+        width: calc(100% - 32px);
+    }
+
 }
 
+
 @media (max-width: 480px) {
-    .produtos-grid {
+
+    .products-grid {
         grid-template-columns: 1fr;
     }
+
+    .produto-card__imagem-wrapper {
+        aspect-ratio: 4 / 5;
+    }
+
 }
